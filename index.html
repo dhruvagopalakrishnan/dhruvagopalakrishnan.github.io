@@ -1,43 +1,97 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>DTG - About Me</title>
-    <style>
-      body {
-        background-color: #333333;
-        font-family: Arial, sans-serif;
-        color: #cccccc;
-        margin: 0;
-      }
-      .container {
-        background-color: #222222;
-        max-width: 800px;
-        margin: 0 auto;
-        padding: 50px;
-        border-radius: 10px;
-        box-shadow: 0 0 10px #888888;
-      }
-      h1 {
-        font-size: 36px;
-        text-align: center;
-        margin-top: 0;
-      }
-      a {
-        color: #cccccc;
-        text-decoration: none;
-        border-bottom: 2px solid #cccccc;
-        transition: border-bottom 0.3s ease;
-      }
-      a:hover {
-        border-bottom: 2px solid #ffffff;
-      }
-    </style>
-  </head>
-  <body>
-    <div class="container">
-      <h1>About Me</h1>
-      <p>Hello, my name is DTG. I'm an 18-year-old male who loves reading books and coding in my free time. I'm always eager to learn and explore new things, and that's what led me to the world of web development. In my spare time, I enjoy playing chess and listening to music. I'm also interested in philosophy and exploring different ideas about life and the universe.</p>
-      <p>Since you're here now, feel free to check out my <a href="https://www.instagram.com/dhruvagopalakrishnan/">Instagram</a> and my <a href="https://github.com/DTGPlayz">GitHub profile</a>.</p>
-    </div>
-  </body>
+<head>
+	<title>DTG | About Me</title>
+	<style>
+		body {
+			font-family: Arial, sans-serif;
+			background-color: #4a4a4a;
+			margin: 0;
+			padding: 0;
+		}
+
+		h1 {
+			text-align: center;
+			margin-top: 50px;
+			color: #fff;
+			text-decoration: underline;
+			font-size: 36px;
+			font-weight: bold;
+			text-transform: uppercase;
+			letter-spacing: 2px;
+		}
+
+		.container {
+			max-width: 800px;
+			margin: 0 auto;
+			padding: 50px;
+			background-color: #b2b2b2;
+			box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+			border-radius: 5px;
+			color: #555;
+			text-align: center;
+			position: relative;
+			transition: transform 0.3s ease-in-out;
+		}
+
+		.container:hover {
+			transform: translateY(-5px);
+		}
+
+		.container:before {
+			content: "";
+			position: absolute;
+			top: -10px;
+			left: -10px;
+			right: -10px;
+			bottom: -10px;
+			background-color: rgba(255, 255, 255, 0.2);
+			z-index: -1;
+			border-radius: 5px;
+			transition: opacity 0.3s ease-in-out;
+			opacity: 0;
+		}
+
+		.container:hover:before {
+			opacity: 1;
+		}
+
+		p {
+			margin: 20px 0;
+			font-size: 18px;
+			line-height: 1.5;
+			text-align: justify;
+			color: #222;
+			font-family: "Open Sans", sans-serif;
+			font-weight: 400;
+		}
+
+		a {
+			color: #fff;
+			text-decoration: none;
+			transition: color 0.3s ease-in-out;
+		}
+
+		a:hover {
+			color: #b2b2b2;
+		}
+
+		@media screen and (max-width: 767px) {
+			.container {
+				padding: 30px;
+			}
+
+			h1 {
+				font-size: 24px;
+			}
+		}
+	</style>
+</head>
+<body>
+	<h1>About Me</h1>
+	<div class="container">
+		<p>Hello, my name is DTG. I'm an 18-year-old male who loves reading books and coding in my free time. I'm always eager to learn and explore new things, and that's what led me to the world of web development. In my spare time, I enjoy playing chess and listening to music. I'm also interested in philosophy and exploring different ideas about life and the universe.</p>
+		<p>Since you're here, feel free to check out my <a href="https://www.instagram.com/dhruvagopalakrishnan/">Instagram</a> or check out my <a href="https://github.com/DTGPlayz">GitHub profile</a>.</p>
+	</div>
+</body>
 </html>
