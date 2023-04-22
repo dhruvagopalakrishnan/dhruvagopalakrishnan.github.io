@@ -1,3 +1,3 @@
-# DTGP.github.io
+# DTG.github.io
 
 Just working on a random webpage coz I'm bored.
