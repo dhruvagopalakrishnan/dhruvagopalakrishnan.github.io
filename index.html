@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dhruva's Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #121212; /* Black background */
+            color: #e0e0e0; /* Light grey text */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff; /* White headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: #4caf50; /* Green links */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        .navbar {
+            background-color: #1f1f1f; /* Dark grey navbar */
+            overflow: hidden;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .navbar li a:hover {
+            background-color: #333333; /* Slightly lighter grey on hover */
+            transform: scale(1.1);
+        }
+
+        header {
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+            background-image: url('header-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            background-color: #1f1f1f; /* Dark grey header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .personal-panel {
+            background-color: #1f1f1f; /* Dark grey panel */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            margin: 40px 0;
+        }
+
+        .personal-panel h2 {
+            color: #4caf50; /* Green heading */
+            margin-bottom: 20px;
+        }
+
+        .personal-panel img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+
+        .personal-panel p {
+            font-size: 1.2rem;
+            color: #e0e0e0; /* Light grey text */
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f; /* Dark grey footer */
+            color: #e0e0e0;
+        }
+
+        footer a {
+            color: #4caf50; /* Green links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        footer .social-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Dhruva's Portfolio</h1>
+        <p>Discover My Projects, Skills, Certifications, and Contact Information</p>
+    </header>
+
+    <div class="content">
+        <h2>About Me</h2>
+        <p>
+            Hello! I'm Dhruva, a motivated and aspiring professional. I aim to deliver impactful solutions through creativity and innovation. Feel free to browse my projects, learn about my skills, or get in touch!
+        </p>
+
+        <div class="personal-panel">
+            <h2>More About Me</h2>
+            <img src="images/chess.jpg" alt="Playing Chess">
+            <p>
+                I used to be a professional chess player, competing in tournaments and honing my strategic thinking skills. Chess has taught me patience, focus, and the ability to think several steps ahead.
+            </p>
+            <img src="images/mridhangam.jpg" alt="Playing Mridhangam">
+            <p>
+                I'm also a mridhangam player, deeply passionate about Carnatic music. Playing the mridhangam has helped me develop rhythm, discipline, and an appreciation for traditional art forms.
+            </p>
+            <img src="images/coding.jpg" alt="Coding">
+            <p>
+                Coding is another passion of mine. I enjoy solving problems, building applications, and exploring new technologies. Music and coding are two creative outlets that inspire me every day.
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Dhruva | Let's connect: 
+            <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn" class="social-icon"></a> 
+            <a href="https://www.github.com"><img src="github-icon.png" alt="GitHub" class="social-icon"></a>
+        </p>
+    </footer>
+</body>
+</html>

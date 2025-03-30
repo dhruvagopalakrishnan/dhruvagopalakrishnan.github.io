@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Certifications - Dhruva's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #121212; /* Black background */
+            color: #e0e0e0; /* Light grey text */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff; /* White headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: #4caf50; /* Green links */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1f1f1f; /* Dark grey navbar */
+            overflow: hidden;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li {
+            float: left;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .navbar li a:hover {
+            background-color: #333333; /* Slightly lighter grey on hover */
+            transform: scale(1.1);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+            background-color: #1f1f1f; /* Dark grey header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .certification-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .certification-item {
+            background-color: #1f1f1f; /* Dark grey background for items */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 300px; /* Larger width for better visibility */
+        }
+
+        .certification-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .certification-item img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 15px;
+        }
+
+        .certification-item p {
+            font-size: 1.2rem;
+            color: #e0e0e0; /* Light grey text */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f; /* Dark grey footer */
+            color: #e0e0e0;
+        }
+
+        footer a {
+            color: #4caf50; /* Green links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Certifications</h1>
+        <p>Explore the certifications I have achieved in various fields.</p>
+    </header>
+
+    <div class="content">
+        <div class="certification-grid">
+            <div class="certification-item">
+                <img src="images/gettingstartedwithpython.png" alt="Coursera Certificate 1">
+                <p>Coursera Certification - Getting Started With Python</p>
+            </div>
+            <div class="certification-item">
+                <img src="images/pythondatastructures.png" alt="Coursera Certificate 2">
+                <p>Coursera Certification - Python Data Structures</p>
+            </div>
+            <div class="certification-item">
+                <img src="images/blockchainandiot.png" alt="Infosys IoT Certification">
+                <p>Infosys Certification - Blockchain in Action & Internet of Things (IoT)</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Dhruva | Let's connect: <a href="https://www.linkedin.com">LinkedIn</a> | <a href="https://www.github.com">GitHub</a></p>
+    </footer>
+</body>
+</html>

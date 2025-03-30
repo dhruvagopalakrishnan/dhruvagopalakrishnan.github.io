@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects - Dhruva's Portfolio</title>
+    <style>
+        /* General Styles */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background: #121212; /* Black background */
+            color: #e0e0e0; /* Light grey text */
+            line-height: 1.6;
+        }
+
+        h1, h2, h3 {
+            color: #ffffff; /* White headings */
+        }
+
+        a {
+            text-decoration: none;
+            color: #4caf50; /* Green links */
+            transition: color 0.3s ease;
+        }
+
+        a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        /* Navbar */
+        .navbar {
+            background-color: #1f1f1f; /* Dark grey navbar */
+            overflow: hidden;
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 10;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .navbar ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .navbar li a {
+            display: block;
+            color: #ffffff; /* White text */
+            text-align: center;
+            padding: 14px 20px;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            border-radius: 5px;
+        }
+
+        .navbar li a:hover {
+            background-color: #333333; /* Slightly lighter grey on hover */
+            transform: scale(1.1);
+        }
+
+        /* Header Section */
+        header {
+            text-align: center;
+            color: white;
+            padding: 100px 0;
+            background-color: #1f1f1f; /* Dark grey header */
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+        }
+
+        header h1 {
+            font-size: 3.5rem;
+            margin: 0;
+            font-weight: bold;
+        }
+
+        header p {
+            font-size: 1.5rem;
+            margin-top: 10px;
+        }
+
+        /* Content Section */
+        .content {
+            padding: 40px 20px;
+            text-align: center;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .project-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            margin: 40px 0;
+        }
+
+        .project-item {
+            background-color: #1f1f1f; /* Dark grey background for items */
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 300px; /* Larger width for better visibility */
+        }
+
+        .project-item:hover {
+            transform: scale(1.1);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.7);
+        }
+
+        .project-item h3 {
+            color: #4caf50; /* Green project titles */
+            margin-bottom: 10px;
+        }
+
+        .project-item p {
+            font-size: 1.2rem;
+            color: #e0e0e0; /* Light grey text */
+        }
+
+        /* Footer */
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #1f1f1f; /* Dark grey footer */
+            color: #e0e0e0;
+        }
+
+        footer a {
+            color: #4caf50; /* Green links */
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        footer a:hover {
+            color: #81c784; /* Lighter green on hover */
+        }
+
+        footer .social-icon {
+            width: 20px;
+            height: 20px;
+            margin: 0 5px;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="projects.html">Projects</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="certifications.html">Certifications</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <header>
+        <h1>Projects</h1>
+        <p>Explore the projects I have worked on, showcasing my skills and creativity.</p>
+    </header>
+
+    <div class="content">
+        <h2>My Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Portfolio Website</h3>
+                <p>A personal portfolio website to showcase my skills, projects, and certifications.</p>
+            </div>
+            <div class="project-item">
+                <h3>Weather App</h3>
+                <p>A weather forecasting app using OpenWeatherMap API to display real-time weather data.</p>
+            </div>
+            <div class="project-item">
+                <h3>Task Manager</h3>
+                <p>A task management tool with features like adding, editing, and deleting tasks.</p>
+            </div>
+        </div>
+
+        <h2>Miscellaneous Projects</h2>
+        <div class="project-grid">
+            <div class="project-item">
+                <h3>Blog Platform</h3>
+                <p>A blogging platform with user authentication and content management features.</p>
+            </div>
+            <div class="project-item">
+                <h3>Chat Application</h3>
+                <p>A real-time chat application using WebSocket for seamless communication.</p>
+            </div>
+            <div class="project-item">
+                <h3>Expense Tracker</h3>
+                <p>An expense tracking app to monitor and categorize daily expenses.</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>© 2024 Dhruva | Let's connect: 
+            <a href="https://www.linkedin.com"><img src="linkedin-icon.png" alt="LinkedIn" class="social-icon"></a> 
+            <a href="https://www.github.com"><img src="github-icon.png" alt="GitHub" class="social-icon"></a>
+        </p>
+    </footer>
+</body>
+</html>
